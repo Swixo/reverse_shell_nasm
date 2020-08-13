@@ -2,5 +2,7 @@
 ![alt text](https://i.imgur.com/6273P8r.png)
 # How to compile 64-bit ELF binary
 
-```nasm -f elf64 -o <filename>.o <filename>.asm```
-```ld -o <filename> <filename>.o```
+```bash
+nasm -f elf32 -o <filename>.o <filename>.asm
+ld -m elf_i386 -o <filename> <filename>.o
+```
